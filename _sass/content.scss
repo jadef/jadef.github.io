@@ -31,7 +31,11 @@
       white-space: nowrap;
 }
 
-aside .icon.repo {
-  display: inline-block;
-  padding: 0 2px 0 4px;
+aside {
+  color: $c-mid-tone;
+
+  .icon.repo {
+    display: inline-block;
+    padding: 0 2px 0 4px;
+  }
 }
