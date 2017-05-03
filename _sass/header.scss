@@ -24,6 +24,19 @@ header {
     color: $c-light;
     display: block;
     padding-top: 15px;
+
+    .icon g {
+      fill: $c-light;
+    }
+
+    &:hover,
+    &:focus {
+      color: $c-secondary;
+
+      .icon g {
+        fill: $c-secondary;
+      }
+    }
   }
 
   .links {
@@ -47,6 +60,10 @@ header {
       position: absolute;
       top: 15px;
       left: 20px;
+
+      g {
+        fill: $c-light;
+      }
     }
 
     &:hover,
@@ -77,6 +94,7 @@ header {
     }
 
     a.button {
+      border-radius: 0;
       color: $c-light;
       display: inline-block;
       text-align: left;

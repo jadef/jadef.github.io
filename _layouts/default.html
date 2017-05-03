@@ -15,15 +15,16 @@
     <title>{{ site.title | default: site.github.repository_name }} by {{ site.github.owner_name }}</title>
   </head>
 
-  <body>
+  <body class="{% if page.type == "project" %}project{% endif %}">
     {% include header.html %}
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
           {{ content }}
         </section>
-
-        {% include side.html %}
+        {% if page.type != "project" %}
+          {% include side.html %}
+        {% endif %}
       </div>
     </div>
 
