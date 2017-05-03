@@ -1,21 +1,57 @@
-// -- Project Specific
-// .project #main-content {
-//   width: 100%;
-// }
+// -- Structural
+.halfs,
+.thirds,
+.quarters {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.halfs .col {
+  flex-basis: 50%;
+  width: 50%;
+}
+
+.thirds .col {
+  flex-basis: 33%;
+  width: 33%;
+}
+
+.quarters .col {
+  flex-basis: 25%;
+  width: 25%;
+}
+
+.col.center {
+  text-align: center;
+}
 
 // -- Main-content typography
 #main-content {
-  h2 {
-    color: $c-primary;
+  margin-bottom: 100px;
+
+  h1, h2, h3, h4 {
     font-family: $font-heading;
-    font-size: 32px;
-    font-weight: 600;
     text-indent: 0;
 
     &::before {
       display: none;
     }
   }
+
+  h2 {
+    color: $c-primary;
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  h3 {
+    color: $c-primary;
+    font-size: 28px;
+    font-weight: 300;
+  }
+
 }
 
 // -- Links & Buttons
