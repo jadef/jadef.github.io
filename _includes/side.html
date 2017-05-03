@@ -1,4 +1,8 @@
 <aside id="sidebar">
+  {% if page.project-live %}
+    {% include external.html %}
+  {% endif %}
+
   <p>Welcome to the github portal of <a href="//github.com/jadef" class="icon-link">
   <svg class="icon repo" width="12px" height="16px" viewBox="0 0 12 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

@@ -1,7 +1,9 @@
-.project #main-content {
-  width: 100%;
-}
+// -- Project Specific
+// .project #main-content {
+//   width: 100%;
+// }
 
+// -- Main-content typography
 #main-content {
   h2 {
     color: $c-primary;
@@ -16,6 +18,7 @@
   }
 }
 
+// -- Links & Buttons
 a {
   color: $c-primary;
   transition: color $speed $ease;
@@ -35,19 +38,55 @@ a:focus {
   }
 }
 
-a.button {
-  background: rgba($c-light, 0.25);
+a.button,
+aside a.button {
+  background: rgba($c-secondary, 0.25);
   border: 2px solid $c-light;
   box-shadow: 4px 2px 6px 0 rgba($c-shadow, 0.35);
+  color: $c-primary;
+  display: inline-block;
   font-family: $font-heading;
+  padding-left: 90px;
+  position: relative;
+  transition: all  $speed $ease;
+
+  .icon {
+    left: 20px;
+    height: 50px;
+    position: absolute;
+    top: 15px;
+    width: 50px;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 8px 6px 12px rgba($c-shadow, 0.25);
+    transform: translateX(-2px) translateY(-2px);
+
+    .icon g {
+      fill: $c-primary;
+    }
+  }
+
+  &.external {
+    margin-bottom: 30px;
+    width: 90px;
+  }
 }
 
 .icon {
   vertical-align: middle;
 
-  &.link-external {
-    vertical-align: super;
-    width: 0.8em;
-    height: 0.8em;
-  }
+  // &.link-external {
+  //   vertical-align: super;
+  //   width: 0.8em;
+  //   height: 0.8em;
+  // }
 }
+
+// .external {
+//   display: block;
+//   font-family: $font-heading;
+//   font-size: 22px;
+//   text-align: right;
+// }

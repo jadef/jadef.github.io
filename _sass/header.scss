@@ -22,8 +22,9 @@ header {
 
   .back {
     color: $c-light;
-    display: block;
+    display: inline-block;
     padding-top: 15px;
+    width: 50%;
 
     .icon g {
       fill: $c-light;
@@ -48,29 +49,24 @@ header {
 
   a.button {
     background: rgba($c-light, 0.25);
+    color: $c-light;
     display: block;
-    padding-left: 90px;
-    position: relative;
     margin-bottom: 20px;
     margin-left: 5px;
-    transition: all  $speed $ease;
+    position: relative;
     width: 90px;
 
-    .icon {
-      position: absolute;
-      top: 15px;
-      left: 20px;
-
-      g {
-        fill: $c-light;
-      }
+    .icon g {
+      fill: $c-light;
     }
 
     &:hover,
     &:focus {
-      box-shadow: 8px 6px 12px rgba($c-shadow, 0.25);
       color: $c-light;
-      transform: translateX(-2px) translateY(-2px);
+
+      .icon g {
+        fill: $c-light;
+      }
     }
   }
 
