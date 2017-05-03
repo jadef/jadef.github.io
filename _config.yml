@@ -3,5 +3,3 @@ description: Github page portal
 show_downloads: false
 google_analytics: [Your Google Analytics tracking ID]
 theme: jekyll-theme-architect
-sass:
-    sass_dir: assets/css
