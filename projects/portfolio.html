@@ -32,29 +32,33 @@ project-live: http://www.jadefaist.com/
 
 <h3>How does it work?</h3>
 <h4>Important aspects</h4>
-<ul>
-  <li>Gulp task runner</li>
-  <li>Mustache templates</li>
-  <li>Sass (Compass)</li>
-</ul>
+<p><strong>Gulp task runner</strong></p>
+<p>Heavily driven by tasks so once the local is set up it's quick to develop and deploy. The notable aspects are the building of the public folder dependent on environment flag passed (defaults to <code>--dev</code>) which builds uncompressed, sourcemapped, browser-synced, watched files.</p>
+
+<p><strong>Mustache templates</strong></p>
+<p>Wanting a minimal dependency on frameworks, it just relies on a simple group of structural (and content) files. For anything repeatable or with potential for updates a lot of the content is isolated to <code>json</code> and <code>xml</code> files.</p>
+
+<p><strong>Sass</strong></p>
+<p>The CSS builds from <code>.scss</code> files organized into tiers of <code>Variables > Elements > Sections > Components</code> (with a <code>Vendor</code> folder thrown in there).</p>
+<p>Notably, it's completely responsive, but also built mobile first, so that the base styles are for all viewports with only progressive structure/styles needed for larger viewports (cuts down on the need for overriding).</p>
 
 <h4>Other things of note</h4>
 <ul>
-  <li>JavaScript Linting (eslint)</li>
-  <li>Sass Linting (sass-lint)</li>
-  <li>Browser-sync</li>
-  <li>Imagemin</li>
-  <li>Retina.js</li>
-  <li>Deploy script</li>
-  <li>little bit of php in portfolio</li>
+  <li>Sass Linting (sass-lint) with my own (<em>opinionated</em>) set of rules.</li>
+  <li>JavaScript Linting (eslint) for some basic standardization.</li>
+  <li>Browser-sync for auto-refresh on file change and various browser checking.</li>
+  <li>Imagemin for squeezing the last bit out of images on build.</li>
+  <li>Retina.js used to choose the proper image size client side.</li>
+  <li>Deploy script for a single command deploy (if SSH access set up of course).</li>
+  <li>little bit of php in portfolio.</li>
 </ul>
 
 <hr />
 
 <h3>What's the future?</h3>
-<h4>Likes / Dislikes</h4>
 <div class="halfs">
   <div class="col">
+    <h4>Likes</h4>
     <ul>
       <li>Its my own thing</li>
       <li>No frameworks, minimal library use</li>
@@ -62,6 +66,7 @@ project-live: http://www.jadefaist.com/
     </ul>
   </div>
   <div class="col">
+    <h4>Dislikes</h4>
     <ul>
       <li>Some rusty edges / learning still floating around</li>
       <li>Writing is hard, some of the content could be better</li>
@@ -72,8 +77,8 @@ project-live: http://www.jadefaist.com/
 
 <h4>Things to keep an eye on</h4>
 <ul>
-  <li>Periodic visual refresh</li>
   <li>Completely refactor portfolio function</li>
+  <li>Periodic visual refresh</li>
   <li>Add new content</li>
 </ul>
 
