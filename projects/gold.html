@@ -7,7 +7,10 @@ project-url: https://github.com/jadef/gold-miner
 project-download: https://github.com/jadef/gold-miner/archive/master.zip
 ---
 
-<p><strong>IMPORTANT NOTE:</strong> the current status of the development is <strong>smack dab in the middle</strong> (insert 1999 under construction gif here). Some features aren't complete, content is a little sparse, and there's some buggy aspects still floating around, but it's getting there.</p>
+<blockquote>
+  <p><strong>IMPORTANT NOTE</strong><br />
+  The current status of the development is <strong>smack dab in the middle</strong> (insert 1999 under construction gif here). Some features aren't complete, content is a little sparse, and there's some buggy aspects still floating around, but it's getting there.</p>
+</blockquote>
 
 <p><img src="../assets/images/gold/interactive.gif" alt="Interactive" /></p>
 
@@ -74,36 +77,25 @@ project-download: https://github.com/jadef/gold-miner/archive/master.zip
 <h3>How does it work?</h3>
 <h4>Important aspects</h4>
 <p><strong>React</strong></p>
-<ul>
-  <li>Babel <code>"presets": ["es2015", "react", "stage-2"]</code></li>
-  <li>JSX</li>
-  <li>Component structure</li>
-  <li>Prop Types</li>
-  <li>States when appropriate</li>
-</ul>
+<p>The important part of this iteration was to build a <a href="https://facebook.github.io/react/">React</a> based single page web app. So it has everything you'd expect from that, most notably the component based <a href="https://github.com/jadef/gold-miner#structure">structure</a>.</p>
+<p>File formats are <code>.jsx</code> to take advantage of the inline syntax that offers. Also taking advantage of next generation JavaScript is achieved through the use of <a href="http://babeljs.io/">Babel</a>, notably with <code>"presets": ["es2015", "react", "stage-2"]</code>.</p>
+<p>A few other notes on React is the declaration of <code>Prop Types</code> and using <code>states</code> when appropriate.</p>
 
 <p><strong>Webpack</strong></p>
-<ul>
-  <li>Middlewhere</li>
-  <li>Hot Reloading</li>
-  <li>Sass Compiling</li>
-  <li>Yarn (or NPM) script to start it</li>
-</ul>
+<p>Original development was driven through the gulp task runner and browserify for the app bundler. Both those have been scrapped in favor of using <a href="https://webpack.js.org/">Webpack</a>.</p>
+<p>A simple yarn script starts a middlewhere instance (in memory) so that any dev changes triggers hot reloading of component or sass changes negating full reloads.</p>
 
 <p><strong>Sass</strong></p>
-<ul>
-  <li>Global variables/elements</li>
-  <li>Section and Component Sass includes right in JS</li>
-  <li>Simple column builder (with flex)</li>
-  <li>Mobile first</li>
-</ul>
+<p>The CSS builds from <code>.scss</code> files organized into tiers of <code>Variables > Elements > Sections > Components</code> (with a <code>Vendor</code> folder thrown in there).</p>
+<p>An important organizational difference is that the section and component level of Sass files are included right in the corresponding jsx file. See the <a href="https://github.com/jadef/gold-miner#structure">Structure section</a> of the readme for a visual representation of this relationship.</p>
+<p>Responsive behavior is achieved through a primarily flexbox based structure as well as a mobile first approach.</p>
 
 <h4>Other things of note</h4>
 <ul>
-  <li>BrowserSync</li>
-  <li>Yarn recommended over npm</li>
-  <li>JavaScript linting (eslint) <code>"extends": ["eslint:recommended", "plugin:react/recommended"]</code></li>
-  <li>Sass linting (stylelint) <code>"extends": "stylelint-config-standard"</code></li>
+  <li>BrowserSync integrated for server reload/browser testing.</li>
+  <li>Yarn recommended over npm for package control (there's a yarn lock file included).</li>
+  <li>JavaScript linting (eslint) implemented with <code>"extends": ["eslint:recommended", "plugin:react/recommended"]</code> as the primary rule sets.</li>
+  <li>Sass linting (stylelint) implemented with <code>"extends": "stylelint-config-standard"</code> as the primary rule set.</li>
   <li>Snap.svg used for svg animation/manipulation</li>
 </ul>
 
