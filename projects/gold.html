@@ -74,17 +74,37 @@ project-download: https://github.com/jadef/gold-miner/archive/master.zip
 <h3>How does it work?</h3>
 <h4>Important aspects</h4>
 <p><strong>React</strong></p>
-<p></p>
+<ul>
+  <li>Babel <code>"presets": ["es2015", "react", "stage-2"]</code></li>
+  <li>JSX</li>
+  <li>Component structure</li>
+  <li>Prop Types</li>
+  <li>States when appropriate</li>
+</ul>
 
 <p><strong>Webpack</strong></p>
-<p></p>
+<ul>
+  <li>Middlewhere</li>
+  <li>Hot Reloading</li>
+  <li>Sass Compiling</li>
+  <li>Yarn (or NPM) script to start it</li>
+</ul>
 
 <p><strong>Sass</strong></p>
-<p></p>
+<ul>
+  <li>Global variables/elements</li>
+  <li>Section and Component Sass includes right in JS</li>
+  <li>Simple column builder (with flex)</li>
+  <li>Mobile first</li>
+</ul>
 
 <h4>Other things of note</h4>
 <ul>
-  <li></li>
+  <li>BrowserSync</li>
+  <li>Yarn recommended over npm</li>
+  <li>JavaScript linting (eslint) <code>"extends": ["eslint:recommended", "plugin:react/recommended"]</code></li>
+  <li>Sass linting (stylelint) <code>"extends": "stylelint-config-standard"</code></li>
+  <li>Snap.svg used for svg animation/manipulation</li>
 </ul>
 
 <hr />
@@ -92,21 +112,25 @@ project-download: https://github.com/jadef/gold-miner/archive/master.zip
 <h3>What's the future?</h3>
 <div class="halfs">
   <div class="col">
-    <h4>Likes</h4>
+    <h4>Pros</h4>
     <ul>
-      <li></li>
+      <li>A <em>Useful</em> tool</li>
+      <li>Intentional functions with interactivity</li>
+      <li>Room for growth</li>
     </ul>
   </div>
   <div class="col">
-    <h4>Dislikes</h4>
+    <h4>Cons</h4>
     <ul>
-      <li></li>
+      <li>Needs smarter data storage</li>
+      <li>Content add/update needs to be stupid simple</li>
+      <li>Not test-drive development</li>
     </ul>
   </div>
 </div>
 
 <h4>Things to keep an eye on</h4>
 
-<p>A running list of potential features can be found <a href="https://github.com/jadef/gold-miner/issues/3">here</a>.</p>
+<p>A running list of potential larger features can be found <a href="https://github.com/jadef/gold-miner/issues/3">here</a>.</p>
 
 <p>Interested in the Nitty Gritty? The current TODO list can be found <a href="https://github.com/jadef/gold-miner/issues/2">here</a>.</p>
