@@ -14,6 +14,7 @@
         </svg>
         <small>View it on</small> Github
       </a>
+      {% if page.project-download %}
       <a href="{{ page.project-download }}" class="button">
         <svg class="icon desktop-download" width="50px" height="50px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -24,6 +25,7 @@
         </svg>
         <small>Download</small> .zip file
       </a>
+      {% endif %}
     {% else %}
       <a href="//github.com/jadef" class="button">
         <svg class="icon mark-github" width="50px" height="50px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
