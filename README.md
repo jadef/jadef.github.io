@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+# Welcome to Jade's GitHub Pages portal
 
-You can use the [editor on GitHub](https://github.com/jadef/jadef.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This repo uses Github's built in pages (jekyll) feature to build a visual portal for all the other github projects.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Check it out at [https://jadef.github.io/](https://jadef.github.io/)
 
-### Markdown
+## Local Development
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+[Github pages setup](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/) for a local jekyll build.
 
-```markdown
-Syntax highlighted code block
+Once in place `bundle exec jekyll serve` will start it up and the scroll back should include a line similar to `Server address: http://127.0.0.1:4000/` to view in your browser.
 
-# Header 1
-## Header 2
-### Header 3
+### Content
 
-- Bulleted
-- List
+the primary page uses the root level `index.html` file as the content.
 
-1. Numbered
-2. List
+Individual projects have their own unique html file in the `projects` folder.
 
-**Bold** and _Italic_ and `Code` text
+Any associated assets can be stored in the `assets` folder.
 
-[Link](url) and ![Image](src)
-```
+### Theme
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Global aspects use jekyll templating found in the `_includes` and `_layouts` folders.
 
-### Jekyll Themes
+Based on the premade `architect` jekyll theme, custom style over rides can be found in the `_sass` folder, which are actually gathered through the `assets/css/styles.scss` build file.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jadef/jadef.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Deployment
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Thanks to github's integrated aspects, deployment is a no brainer. Push to the master branch, and it's live (after a little behind the scenes compilation by jekyll).
