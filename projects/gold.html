@@ -9,7 +9,9 @@ project-download: https://github.com/jadef/gold-miner/archive/master.zip
 
 <blockquote>
   <p><strong>IMPORTANT NOTE</strong><br />
-  The current status of the development is <strong>smack dab in the middle</strong> (insert 1999 under construction gif here). Some features aren't complete, content is a little sparse, and there's some buggy aspects still floating around, but it's getting there.</p>
+    The current status of the development is <strong>smack dab in the middle</strong> (insert 1999 under construction
+    gif here). Some features aren't complete, content is a little sparse, and there's some buggy aspects still floating
+    around, but it's getting there.</p>
 </blockquote>
 
 <p><img src="../assets/images/gold/interactive.gif" alt="Interactive" /></p>
@@ -18,8 +20,11 @@ project-download: https://github.com/jadef/gold-miner/archive/master.zip
 
 <div class="halfs">
   <div class="col">
-    <p>Technology stops for no one. I've found that part of being a web developer inherently involves dabbling in new things, taking what you know from <em>solution A</em> and seeing if <em>solution B</em> needs something else.</p>
-    <p>A few years back I was starting to write down some of my thoughts on various technologies, languages, libraries, etc. This could have just been a list of notes on my computer some where, but I also had some time and interest in getting my hands dirty in a few new (to me) technologies.</p>
+    <p>Technology stops for no one. I've found that part of being a web developer inherently involves dabbling in new
+      things, taking what you know from <em>solution A</em> and seeing if <em>solution B</em> needs something else.</p>
+    <p>A few years back I was starting to write down some of my thoughts on various technologies, languages, libraries,
+      etc. This could have just been a list of notes on my computer some where, but I also had some time and interest in
+      getting my hands dirty in a few new (to me) technologies.</p>
   </div>
   <div class="col center" style="padding: 0 10px;">
     <img src="../assets/images/gold/logo-crest.svg" alt="Gold Miner" />
@@ -27,18 +32,21 @@ project-download: https://github.com/jadef/gold-miner/archive/master.zip
 </div>
 
 
-<p>More recently I found myself in a similar place, wanting to have a project where I could dive into <a href="#">React</a>. So my note keeper project got a whole new iteration. After some more intentional rebranding and design, I completely started fresh on the code.</p>
+<p>More recently I found myself in a similar place, wanting to have a project where I could dive into <a
+    href="https://reactjs.org/">React</a>. So my note keeper project got a whole new iteration. After some more
+  intentional rebranding and design, I completely started fresh on the code.</p>
 
-<p>Content-wise, the notes are completely personal thoughts at the time of writing. They're opinionated, and very possibly inaccurate, but a helpful way for me to keep tabs on the different things that I've come across.</p>
+<p>Content-wise, the notes are completely personal thoughts at the time of writing. They're opinionated, and very
+  possibly inaccurate, but a helpful way for me to keep tabs on the different things that I've come across.</p>
 
 <div class="halfs">
   <div class="col center">
     <p>Original
-    <img src="../assets/images/gold/original.jpg" alt="Original" /></p>
+      <img src="../assets/images/gold/original.jpg" alt="Original" /></p>
   </div>
   <div class="col center">
     <p>Current
-    <img src="../assets/images/gold/current-filtered.jpg" alt="Current " /></p>
+      <img src="../assets/images/gold/current-filtered.jpg" alt="Current " /></p>
   </div>
 </div>
 
@@ -69,11 +77,11 @@ project-download: https://github.com/jadef/gold-miner/archive/master.zip
 </div>
 
 <p class="center"><strong>Wires</strong>
-<img src="../assets/images/gold/wires.jpg" alt="Wires" />
+  <img src="../assets/images/gold/wires.jpg" alt="Wires" />
 </p>
 
 <p class="center"><strong>Design Comps</strong>
-<img src="../assets/images/gold/designs.jpg" alt="Designs" />
+  <img src="../assets/images/gold/designs.jpg" alt="Designs" />
 </p>
 
 <hr />
@@ -81,25 +89,37 @@ project-download: https://github.com/jadef/gold-miner/archive/master.zip
 <h3>How does it work?</h3>
 <h4>Important aspects</h4>
 <p><strong>React</strong></p>
-<p>The important part of this iteration was to build a <a href="https://facebook.github.io/react/">React</a> based single page web app. So it has everything you'd expect from that, most notably the component based <a href="https://github.com/jadef/gold-miner#structure">structure</a>.</p>
-<p>File formats are <code>.jsx</code> to take advantage of the inline syntax that offers. Also taking advantage of next generation JavaScript is achieved through the use of <a href="http://babeljs.io/">Babel</a>, notably with <code>"presets": ["es2015", "react", "stage-2"]</code>.</p>
-<p>A few other notes on React is the declaration of <code>Prop Types</code> and using <code>states</code> when appropriate.</p>
+<p>The important part of this iteration was to build a <a href="https://facebook.github.io/react/">React</a> based
+  single page web app. So it has everything you'd expect from that, most notably the component based <a
+    href="https://github.com/jadef/gold-miner#structure">structure</a>.</p>
+<p>File formats are <code>.jsx</code> to take advantage of the inline syntax that offers. Also taking advantage of next
+  generation JavaScript is achieved through the use of <a href="http://babeljs.io/">Babel</a>, notably with
+  <code>"presets": ["es2015", "react", "stage-2"]</code>.</p>
+<p>A few other notes on React is the declaration of <code>Prop Types</code> and using <code>states</code> when
+  appropriate.</p>
 
 <p><strong>Webpack</strong></p>
-<p>Original development was driven through the gulp task runner and browserify for the app bundler. Both those have been scrapped in favor of using <a href="https://webpack.js.org/">Webpack</a>.</p>
-<p>A simple yarn script starts a middlewhere instance (in memory) so that any dev changes triggers hot reloading of component or sass changes negating full reloads.</p>
+<p>Original development was driven through the gulp task runner and browserify for the app bundler. Both those have been
+  scrapped in favor of using <a href="https://webpack.js.org/">Webpack</a>.</p>
+<p>A simple yarn script starts a middlewhere instance (in memory) so that any dev changes triggers hot reloading of
+  component or sass changes negating full reloads.</p>
 
 <p><strong>Sass</strong></p>
-<p>The CSS builds from <code>.scss</code> files organized into tiers of <code>Variables > Elements > Sections > Components</code> (with a <code>Vendor</code> folder thrown in there).</p>
-<p>An important organizational difference is that the section and component level of Sass files are included right in the corresponding jsx file. See the <a href="https://github.com/jadef/gold-miner#structure">Structure section</a> of the readme for a visual representation of this relationship.</p>
+<p>The CSS builds from <code>.scss</code> files organized into tiers of <code>Variables > Elements > Sections >
+    Components</code> (with a <code>Vendor</code> folder thrown in there).</p>
+<p>An important organizational difference is that the section and component level of Sass files are included right in
+  the corresponding jsx file. See the <a href="https://github.com/jadef/gold-miner#structure">Structure section</a> of
+  the readme for a visual representation of this relationship.</p>
 <p>Responsive behavior is achieved through a primarily flexbox based structure as well as a mobile first approach.</p>
 
 <h4>Other things of note</h4>
 <ul>
   <li>BrowserSync integrated for server reload/browser testing.</li>
   <li>Yarn recommended over npm for package control (there's a yarn lock file included).</li>
-  <li>JavaScript linting (eslint) implemented with <code>"extends": ["eslint:recommended", "plugin:react/recommended"]</code> as the primary rule sets.</li>
-  <li>Sass linting (stylelint) implemented with <code>"extends": "stylelint-config-standard"</code> as the primary rule set.</li>
+  <li>JavaScript linting (eslint) implemented with <code>"extends": ["eslint:recommended",
+      "plugin:react/recommended"]</code> as the primary rule sets.</li>
+  <li>Sass linting (stylelint) implemented with <code>"extends": "stylelint-config-standard"</code> as the primary rule
+    set.</li>
   <li>Snap.svg used for svg animation/manipulation</li>
 </ul>
 
@@ -127,6 +147,8 @@ project-download: https://github.com/jadef/gold-miner/archive/master.zip
 
 <h4>Things to keep an eye on</h4>
 
-<p>A running list of potential larger features can be found <a href="https://github.com/jadef/gold-miner/issues/3">here</a>.</p>
+<p>A running list of potential larger features can be found <a
+    href="https://github.com/jadef/gold-miner/issues/3">here</a>.</p>
 
-<p>Interested in the Nitty Gritty? The current TODO list can be found <a href="https://github.com/jadef/gold-miner/issues/2">here</a>.</p>
+<p>Interested in the Nitty Gritty? The current TODO list can be found <a
+    href="https://github.com/jadef/gold-miner/issues/2">here</a>.</p>
